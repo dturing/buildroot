@@ -558,6 +558,13 @@ config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_WEBP
 	help
 	  Webp image format plugin
 
+config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_WEBRTCBIN
+	bool "webrtcbin"
+	depends on BR2_PACKAGE_LIBNICE
+	select BR2_PACKAGE_WEBRTCBIN
+	help
+	 WebRTC elements (webrtcbin)
+
 config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_WEBRTCDSP
 	bool "webrtcdsp"
 	# All depends from webrtc-audio-processing
